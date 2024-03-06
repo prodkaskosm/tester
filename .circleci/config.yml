@@ -12,6 +12,7 @@ jobs:
       - run:
           name: Run tests
           command: node -v
+          command: lscpu
   build:
     docker:
       - image: cimg/node:21.6.2
