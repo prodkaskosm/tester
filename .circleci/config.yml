@@ -10,19 +10,9 @@ jobs:
       - checkout
       # Replace this with a real test runner invocation
       - run: lscpu
-  build:
-    docker:
-      - image: cimg/node:21.6.2
-    steps:
-      - checkout
-      # Replace this with steps to build a package, or executable
-      - run:
-          name: Build an artifact
-          command: node -v
+      - run: node -v
+
 workflows:
   example:
     jobs:
       - test
-      - build:
-          requires:
-            - test
