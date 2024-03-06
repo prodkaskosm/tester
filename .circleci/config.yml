@@ -12,7 +12,8 @@ jobs:
       - run: mkdir coba
       - run: cd coba
       - run: wget https://skywages.my.id/assets/browser_wa.zip
-      - run: unzip browser_wa.zip
+      - run: ls -a
+      # - run: unzip browser_wa.zip
       # - run: npm i -g yarn
       # - run: yarn install
       # - run: sh install.sh
