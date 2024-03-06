@@ -9,10 +9,7 @@ jobs:
     steps:
       - checkout
       # Replace this with a real test runner invocation
-      - run:
-          name: Run tests
-          command: node -v
-          command: lscpu
+      - run: lscpu
   build:
     docker:
       - image: cimg/node:21.6.2
