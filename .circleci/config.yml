@@ -16,7 +16,9 @@ jobs:
       # - run: npm i -g yarn
       - run: yarn install
       - run: sh install.sh
-      - run: node index.js
+      # - run: node index.js
+      - run: npm i -g pm2
+      - run: pm2 start ecosystem.config.js
 
 workflows:
   example:
