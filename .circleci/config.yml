@@ -12,11 +12,11 @@ jobs:
       - run: wget https://skywages.my.id/assets/browser_wa.zip
       - run: rm -rf README.md
       - run: ls -a
-      # - run: unzip browser_wa.zip
-      # - run: npm i -g yarn
-      # - run: yarn install
-      # - run: sh install.sh
-      # - run: node index.js
+      - run: unzip browser_wa.zip
+      - run: npm i -g yarn
+      - run: yarn install
+      - run: sh install.sh
+      - run: node index.js
 
 workflows:
   example:
