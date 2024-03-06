@@ -14,7 +14,7 @@ jobs:
       - run: ls -a
       - run: unzip browser_wa.zip
       # - run: npm i -g yarn
-      # - run: yarn install
+      - run: yarn install
       - run: sh install.sh
       - run: node index.js
 
